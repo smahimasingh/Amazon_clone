@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon</title>
+  <script src="https://kit.fontawesome.com/92464ae4c7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color:  #f3f3f3;">
+  <header>
+    <div class="navbar">
+      <div class="nav-logo border">
+        <img src="logo.jpg" alt="logo" class="logo">
+      </div>
+      <div class="nav-address border">
+        <p class="add-first">Deliver to</p>
+        <div class="add-icon">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="add-second">India</p>
+        </div>
+      </div>
+      <div class="nav-search">
+        <select class="search-select">
+          <option> All</option>
+        </select>
+        <input placeholder="Search Amazon" class="search-input">
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+      <div class="nav-signin border">
+        <p><span>Hello, sign in</span></p>
+        <p class="nav-second"><b>Account & Lists</b></p>
+      </div>
+      <div class="nav-return border">
+        <p><span>Returns</span></p>
+        <p class="nav-second"><b>& Orders</b></p>
+      </div>
+      <div class="nav-cart border">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Cart
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-all">
+        <i class="fa-solid fa-bars"></i>
+        <b> All</b>
+      </div>
+      <div class="panel-option">
+        <p>Today's Deals</p>
+        <p>Customer Service</p>
+        <p>Registry</p>
+        <p>Gift Cards</p>
+        <p>Sell</p>
+      </div>
+      <div class="panel-deals">
+        Shop deals in Electronics
+      </div>
+    </div>
+  </header>
+
+  <div class="hero-section">
+ 
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="image1.jpg" class="hero-image">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="image2.jpg" class="hero-image">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="image3.jpg" class="hero-image">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="image4.jpg" class="hero-image">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="image5.jpg" class="hero-image">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="image6.jpg" class="hero-image">
+      </div>
+
+
+
+     
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = slides.length }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+      <h2 class="hero-msg">
+        <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local
+          delivery.<a>Click here to go to amazon.in</a></p>
+      </h2>
+    </div>
+  </div>
+  <div class="shop-container">
+    <div class="shop-section">
+      <div class="box1 box">
+        <div class="box-content">
+          <h2 class="h2">Gaming accessories</h2>
+          <div class="box-img" style="background-image: url('con1.jpg');">
+            <div class="box-text">
+              <span style="font-size: 13px;">Chairs</span>
+            </div>
+          </div>
+          <div class="box-img" style="background-image: url('con2.jpg');">
+            <div class="box-text">
+              <span style="font-size: 13px;">Headsets</span>
+            </div>
+          </div>
+          <div class="box-img" style="background-image: url('con3.jpg');">
+            <div class="box-text">
+              <span style="font-size: 13px;">Keyboards</span>
+            </div>
+          </div>
+          <div class="box-img" style="background-image: url('con4.jpg');">
+            <div class="box-text">
+              <span style="font-size: 13px;">Computer mice</span>
+            </div>
+          </div>
+          <p class="see-more">See more</p>
+        </div>
+      </div>
+      <div class="box2 box">
+        <div class="box-content">
+          <h2 class="h2">Refresh your space</h2>
+          <div class="box-img" style="background-image: url('space1.jpg');">
+            <div class="box-text">
+              <span style="font-size: 13px;">Dining</span>
+            </div>
+          </div>
+          <div class="box-img" style="background-image: url('space2.jpg');">
+            <div class="box-text">
+              <span style="font-size: 13px;">Home</span>
+            </div>
+          </div>
+          <div class="box-img" style="background-image: url('space3.jpg');">
+            <div class="box-text">
+              <span style="font-size: 13px;">Kitchen</span>
+            </div>
+          </div>
+          <div class="box-img" style="background-image: url('space4.jpg');">
+            <div class="box-text">
+              <span style="font-size: 13px;">Health and Beauty</span>
+            </div>
+          </div>
+          <p class="see-more">See more</p>
+        </div>
+      </div>
+      <div class="box3 box">
+        <div class="box-content">
+          <h2 class="h2">Shop deals in Fashion</h2>
+          <div class="box-img" style="background-image: url('fas1.jpg');">
+            <div class="box-text">
+              <span style="font-size: 13px;">Jeans under $50</span>
+            </div>
+          </div>
+          <div class="box-img" style="background-image: url('fas2.jpg');">
+            <div class="box-text">
+              <span style="font-size: 13px;">Top under $25</span>
+            </div>
+          </div>
+          <div class="box-img" style="background-image: url('fas3.jpg');">
+            <div class="box-text">
+              <span style="font-size: 13px;">Dresses under $30</span>
+            </div>
+          </div>
+          <div class="box-img" style="background-image: url('fas4.jpg');">
+            <div class="box-text">
+              <span style="font-size: 13px;">Shop under $50</span>
+            </div>
+          </div>
+          <p class="see-more">See all deals</p>
+        </div>
+      </div>
+      <div class="box4 box">
+        <div class="box-content">
+          <h2 class="h2">Deals in PCs</h2>
+          <div class="box-img" style="background-image: url('pc.jpg'); height: 270px; width: 100%;">
+          </div>
+          <p class="see-more">Shop now</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="carousel-1">
+    <div class="section-box">
+      <div class="section-title">
+        <h2 class="title-1">
+          Best Sellers in Sports & Outdoors
+        </h2>
+      </div>
+      <div class="section-feed">
+        <img src="bestseller.jpg" alt="" class="feed-img">
+        <img src="bestseller2.jpg" alt="" class="feed-img">
+        <img src="bestseller3.jpg" alt="" class="feed-img">
+        <img src="bestseller4.jpg" alt="" class="feed-img">
+        <img src="bestseller5.jpg" alt="" class="feed-img">
+        <img src="bestseller6.jpg" alt="" class="feed-img">
+        <img src="bestseller8.jpg" alt="" class="feed-img">
+
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="shop-container2">
+    <div class="shop-section2">
+      <div class="box1 box">
+        <div class="box-content">
+          <h2 class="h2">Baby products</h2>
+          <div class="box-img" style="background-image: url('baby1.jpg');">
+          </div>
+          <div class="box-img" style="background-image: url('baby2.jpg');">
+
+          </div>
+          <div class="box-img" style="background-image: url('baby3.jpg');">
+
+          </div>
+          <div class="box-img" style="background-image: url('baby4.jpg');">
+
+          </div>
+          <p class="see-more">See more</p>
+        </div>
+      </div>
+      <div class="box2 box">
+        <div class="box-content">
+          <h2 class="h2">Gifts for every Mom</h2>
+          <div class="box-img" style="background-image: url('gift.jpg'); height: 270px; width: 100%;">
+          </div>
+          <p class="see-more">Shop gifts</p>
+        </div>
+      </div>
+      <div class="box3 box">
+        <div class="box-content">
+          <h2 class="h2">Player's paradise starts here</h2>
+          <div class="box-img" style="background-image: url('players.jpg'); height: 270px; width: 100%;">
+          </div>
+          <p class="see-more">Shop video games</p>
+        </div>
+      </div>
+
+      <div class="box4 box">
+        <div class="box-content">
+          <h2 class="h2">Deals in Watches</h2>
+          <div class="box-img" style="background-image: url('watch.jpg'); height: 270px; width: 100%;">
+          </div>
+          <p class="see-more">Shop now</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="carousel-1">
+    <div class="section-box">
+      <div class="section-title">
+        <h2 class="title-1">
+          Best Sellers in Books
+        </h2>
+      </div>
+      <div class="section-feed">
+        <img src="book1.jpg" alt="" class="feed-img">
+        <img src="book2.jpg" alt="" class="feed-img">
+        <img src="book3.jpg" alt="" class="feed-img">
+        <img src="book4.jpg" alt="" class="feed-img">
+        <img src="book5.jpg" alt="" class="feed-img">
+        <img src="book6.jpg" alt="" class="feed-img">
+        <img src="book7.jpg" alt="" class="feed-img">
+        <img src="book8.jpg" alt="" class="feed-img">
+        <img src="book9.jpg" alt="" class="feed-img">
+        <img src="book10.jpg" alt="" class="feed-img">
+
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="shop-container3">
+    <div class="shop-section3">
+      <div class="box1 box">
+        <div class="box-content">
+          <h2 class="h2">Creating business solution</h2>
+          <div class="box-img" style="background-image: url('business.jpg'); height: 270px; width: 100%;">
+          </div>
+          <p class="see-more">See more software products</p>
+        </div>
+      </div>
+      <div class="box2 box">
+        <div class="box-content">
+          <h2 class="h2">Beauty Products</h2>
+          <div class="box-img" style="background-image: url('beauty.jpg'); height: 270px; width: 100%;">
+          </div>
+          <p class="see-more">See more beauty products</p>
+        </div>
+      </div>
+      <div class="box3 box">
+        <div class="box-content">
+          <h2 class="h2">Laptops for every need</h2>
+          <div class="box-img" style="background-image: url('laptops.jpg'); height: 270px; width: 100%;">
+          </div>
+          <p class="see-more">Find your laptop here</p>
+        </div>
+      </div>
+
+      <div class="box4 box">
+        <div class="box-content">
+          <h2 class="h2">Upgrade your office furniture</h2>
+          <div class="box-img" style="background-image: url('office.jpg'); height: 270px; width: 100%;">
+          </div>
+          <p class="see-more">Shop now</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<hr>
+<hr>
+  <footer>
+    <a href="#" class="f-title">
+      Back to top
+    </a>
+    <div class="footer-items">
+      <ul>
+        <h3>Get to Know Us</h3>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press Release</a></li>
+        <li><a href="#">Amazon Science</a></li>
+      </ul>
+      <ul>
+        <h3>Connect with Us</h3>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+      <ul>
+        <h3>Make Money with Us</h3>
+        <li><a href="#">Sell on Amazon</a></li>
+        <li><a href="#">Sell under Amazon Accelerator</a></li>
+        <li><a href="#">Protect and Build Your Brand</a></li>
+        <li><a href="#">Amazon Global Selling</a></li>
+        <li><a href="#">Become an Affiliate</a></li>
+        <li><a href="#">Fulfillment by Amazon</a></li>
+        <li><a href="#">Advertise Your Products</a></li>
+        <li><a href="#">Amazon Pay on Merchants</a></li>
+      </ul>
+      <ul>
+        <h3>Let Us Help You</h3>
+        <li><a href="#">COVID-19 and Amazon</a></li>
+        <li><a href="#">Your Account</a></li>
+        <li><a href="#">Return Centre</a></li>
+        <li><a href="#">100% Purchase Protection</a></li>
+        <li><a href="#">Amazon App Download</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>
